@@ -82,6 +82,10 @@ button[data-key="C"] {
   background: #f44336;
 }
 
+button[data-key="%"] {
+  background: #ff9800;
+}
+
 /* Footer Section */
 footer {
   margin-top: 20px;
