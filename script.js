@@ -30,5 +30,11 @@ function handleInput(key) {
     operator = '';
     previousValue = '';
     display.textContent = '0';
+  } else if (key === '%') {
+    if (currentValue) {
+      currentValue = (parseFloat(currentValue) / 100).toString();
+      display.textContent = currentValue;
+    }
   }
 }
+
