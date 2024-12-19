@@ -1,0 +1,104 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+/* Title Styling */
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+/* Calculator Container */
+.calculator {
+  background: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 300px;
+  transform: perspective(1000px) rotateX(10deg);
+}
+
+/* Calculator Display */
+.display {
+  background: #111;
+  color: #0f0;
+  font-size: 2em;
+  text-align: right;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Keys Grid */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Buttons Style */
+button {
+  background: #333;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1.2em;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
+
+button[data-key="="] {
+  background: #4caf50;
+}
+
+button[data-key="C"] {
+  background: #f44336;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #fff;
+  opacity: 0.8;
+}
+
+footer a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
